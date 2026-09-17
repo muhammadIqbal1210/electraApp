@@ -211,7 +211,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 'Data Terkini',
                                 style: TextStyle(
                                   fontSize: 18,
-                                  fontWeight: FontWeight.bold,
+                                  fontWeight: FontWeight.w600,
+                                  fontFamily: 'Inter',
                                   color: Color(0xFF0F172A),
                                 ),
                               ),

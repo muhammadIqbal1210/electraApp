@@ -87,17 +87,17 @@ class _QrVerificationScreenState extends State<QrVerificationScreen> {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                     decoration: BoxDecoration(
-                      color: AppColors.alertSuccess.withAlpha(30),
+                      color: AppColors.alertSuccess.withAlpha(40),
                       borderRadius: BorderRadius.circular(30),
                       border: Border.all(color: AppColors.alertSuccess),
                     ),
                     child: const Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Icon(Icons.verified, color: AppColors.alertSuccess, size: 18),
+                        Icon(Icons.verified_user, color: AppColors.alertSuccess, size: 20),
                         SizedBox(width: 8),
                         Text(
-                          'Terverifikasi PostgreSQL & Fabric Ledger',
+                          'DATA TERVERIFIKASI ASLI',
                           style: TextStyle(color: AppColors.alertSuccess, fontWeight: FontWeight.bold, fontSize: 12),
                         ),
                       ],
@@ -114,14 +114,14 @@ class _QrVerificationScreenState extends State<QrVerificationScreen> {
                   const SizedBox(height: 12),
                   _buildDetailCard(
                     title: 'Riwayat Pengiriman & Temperature Log',
-                    content: 'Status Logistik: Siap Diambil / Dalam Perjalanan.\nIntegrasi Sensor: Terhubung ke Broker MQTT 72.61.118.54',
+                    content: 'Status Logistik: Siap Diambil / Dalam Perjalanan.\nIntegrasi Sensor: Terhubung ke Broker MQTT SmartLink',
                     icon: Icons.local_shipping_outlined,
                   ),
                   const SizedBox(height: 12),
                   _buildDetailCard(
-                    title: 'Blockchain Hash Proof',
-                    content: 'ID Batch: ${widget.batchId}\nProof Status: Imutabel dan terverifikasi sah.',
-                    icon: Icons.fingerprint,
+                    title: 'Alamat Verifikasi Kebenaran Data',
+                    content: 'ID Batch: ${widget.batchId}\nURL Verifikasi: https://electratech.id/verify/${widget.batchId}',
+                    icon: Icons.link,
                   ),
                 ],
               ),
